@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import CardTemas from '../cardTemas/CardTemas';
 import { useNavigate } from 'react-router-dom';
-import { AuthContext } from '../context/AuthContext';
+import { AuthContext } from '../../context/AuthContext';
 
 function ListaTemas() {
 
