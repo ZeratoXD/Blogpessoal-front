@@ -1,5 +1,6 @@
 import React from 'react';
 import ListaPostagens from '../../postagens/listaPostagem/ListaPostagem';
+import homeLogo from '../../assets/home.png'
 
 
 function Home() {
@@ -18,13 +19,15 @@ function Home() {
             </div>
   
             <div className="flex justify-center ">
-              
+                        <img src={homeLogo} alt="" className='w-2/3' />
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <ListaPostagens />
-      </>
+
+            <ListaPostagens />  {/* Estamos inserindo aqui o Componente de Listagem para mostrar as Postagens no Home também */}
+
+        </>
     );
 }
 
-export default Home;
+export default Home
